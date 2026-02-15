@@ -1,0 +1,30 @@
+Jie is climbing a mountain which is $N$ units tall, as inspiration for his latest game “Mountain Guarder”. 
+<br><br>
+Fortunately, he has the help of an expert climbing team of robots. He can pay a $X$ dollars for a team of infinite robots with experience level $X$.
+<br><br>
+Both Jie and all of the robots start at height $0$. In $1$ second, Jie or a robot can move $1$ unit up if there is a robot below or at their height that is at most $X$ units below. Only one climber can move in each second. Note that there must be a robot within $X$ units below before the move is made, not necessarily after.
+<br><br>
+Find the minimum amount of money Jie needs to pay to climb the mountain in at most $K$ seconds.
+<br><br>
+<h3>Input</h3>
+The first line contains an integer $T$ $(1 \le T \le 2\cdot 10^5)$ the number of testcases
+<br>
+Each testcase contains two integers $N$ and $K$ $(1 \le N \le K \le 10^9)$.
+<h3>Output</h3>
+Output $T$ lines, minimum amount of money Jie needs to pay for each testcase.
+<br><br>
+<b>Sample Input</b>
+<codeblock>2
+5 8
+12 20</codeblock>
+<b>Sample Output</b>
+<codeblock>2
+5</codeblock>
+<h3>Note</h3>
+It takes exactly $8$ seconds in testcase 1 with $1$ dollar.
+<br>
+It takes $19$ seconds in testcase 2 with $4$ dollars.
+<br><br>
+Subtask 1: $N \le 10^3$<br>
+Subtask 2: $N \le 10^6$<br>
+Subtask 3: No additional constraints
