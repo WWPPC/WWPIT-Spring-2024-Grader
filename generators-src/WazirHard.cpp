@@ -42,8 +42,7 @@ int main(int argc, char* argv[]){
     while(t--){
         for(int i = 0; i<4; i++){
             write_int(rand()%lim);
-            write_char(' ');
+            write_char(" \n"[i == 3]);
         }
-        write_char('\n');
     }
 }

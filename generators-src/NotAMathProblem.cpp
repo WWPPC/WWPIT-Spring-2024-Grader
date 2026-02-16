@@ -43,9 +43,8 @@ int main(int argc, char* argv[]){
 	write_char('\n');
 	for(int i = 0; i<n; i++){
 		write_int(rand()%mx+1);
-		write_char(' ');
+		write_char(" \n"[i == n-1]);
 	}
-	write_char('\n');
 	while(q--) if(rand()&1){
 		write_char('1');
 		write_char(' ');

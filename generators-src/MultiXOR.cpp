@@ -50,7 +50,7 @@ int main(int argc, char* argv[]){
     write_char('\n');
     for (int i = 0; i < n; i++) {
         write_int(arr[i]);
-        write_char(' ');
+        if (i < n-1) write_char(' ');
+        else write_char('\n');
     }
-    write_char('\n');
 }
